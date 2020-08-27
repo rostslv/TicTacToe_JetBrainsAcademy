@@ -22,7 +22,9 @@ public class Main {
         String[][] arr = parseString(chars);
         //printing game field
         printField(arr);
+        System.out.println("Print coordinates like 1 3 to paste X or O!");
         while (gameOver == false) {
+            System.out.println(counterMove % 2 == 0 ? "X turn" : "O turn");
             //check coordinates
             validateCoordinates();
             //*
